@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music-Player</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/59e20f8f36.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="container">
+  <div class="music-player">
+<nav>
+      <div class="circle">
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+      <div class="circle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+</nav>
+<img src="images/468-thumbnail.png" class="ms-img">
+<h1>Despacito</h1>
+<p>Luis Fonsi Ft. Puerto Rican</p>
+
+<audio controls id="song">
+<source src="images/Y2meta.app - NEFFEX - Go! 🚀 [Copyright-Free] No.147 (320 kbps).mp3" type="audio/mpeg" src="">
+</audio>  
+
+<input type="range" id="progress">
+
+<div class="controls">
+     <div class="icon"><i class="fa-solid fa-backward"></i></div>
+     <img id="ctrlIcon" src="images/pink play button.png" onclick="playPause()">
+     <div class="icon"><i class="fa-solid fa-forward"></i></div>
+</div>
+
+</div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
